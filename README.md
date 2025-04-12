@@ -2,6 +2,8 @@
 
 A modern Todo application built with Next.js 13+ (App Router), TypeScript, and Tailwind CSS.
 
+![image](https://github.com/user-attachments/assets/bad9dfd0-ebe8-4bc7-9da2-94c031bbe390)
+
 ## Features
 
 - 🚀 Server-Side Rendering (SSR)
