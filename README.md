@@ -27,22 +27,28 @@ A modern Todo application built with Next.js 13+ (App Router), TypeScript, and T
 ```
 src/
 ├── app/
-│   ├── api/              # API routes
+│   ├── api/                    # API routes
 │   │   └── todos/
-│   │       ├── collection/
+│   │       ├── collection/     # Collection endpoints
 │   │       │   └── route.ts
-│   │       └── [id]/
+│   │       └── [id]/           # Individual todo endpoints
 │   │           └── route.ts
-│   ├── components/       # React components
-│   │   └── Todo/
-│   │       ├── Todo.tsx
-│   │       └── types.ts
-│   ├── types/           # Global TypeScript types
-│   │   └── todo.ts
-│   ├── store/           # State management
-│   │   └── todos.ts
-│   ├── layout.tsx       # Root layout
-│   └── page.tsx         # Home page
+│   ├── components/             # React components
+│   │   ├── Navigation.tsx      # Navigation component
+│   │   └── TodoList/           # Todo list feature
+│   │       ├── TodoList.tsx    # Main todo component
+│   │       ├── TodoLoading.tsx # Loading state
+│   │       └── types/          # Component-specific types
+│   │           ├── TodoItem.ts # Todo item type
+│   │           └── TodoProps.ts # Component props
+│   ├── store/                  # State management
+│   │   └── todos.ts            # Todo store
+│   ├── about/                  # About page
+│   │   └── page.tsx
+│   ├── layout.tsx              # Root layout
+│   ├── page.tsx                # Home page
+│   ├── loading.tsx             # Global loading state
+│   └── globals.css             # Global styles
 ```
 
 ## Getting Started
